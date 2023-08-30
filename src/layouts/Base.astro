@@ -55,5 +55,20 @@ const {
   <body class="dark:bg-zinc-900 scroll-smooth dark:[color-scheme:dark]">
     <Navigation/>
 		<slot/>
+    <!-- Footer Section -->
+    <footer class="w-full bg-gray-100 dark:bg-zinc-800 py-6 border-t dark:border-zinc-700">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">&copy; {new Date().getFullYear()} {SITE_TITLE}. All rights reserved.</p>
+          </div>
+
+          <div>
+            <a href="https://github.com/keshavbiswa/confuscript" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+            <a href="https://x.com/keshavbiswa" class="text-sm text-blue-600 dark:text-blue-400 hover:underline ml-4">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 	</body>
 </html>
