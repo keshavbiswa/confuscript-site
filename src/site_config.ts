@@ -14,10 +14,18 @@ export const SIDEBAR_ITEMS = {
     "/docs/get-started/introduction",
     "/docs/get-started/installation",
   ],
-  "Tutorials": [
-    "/docs/tutorials/build-x",
+  "Documentation": [
+    "/docs/documentation/introduction",
+    "/docs/documentation/io",
+    "/docs/documentation/variables-and-data-types",
+    "/docs/documentation/operators",
+    "/docs/documentation/conditional-statements",
+    "/docs/documentation/loops",
+    "/docs/documentation/functions",
+    "/docs/documentation/comments",
   ],
-  "Guides": [
-    "/docs/guides/migrate-from-z",
-  ]
+  "Tutorials": [
+    "/docs/tutorials/factorials",
+    "/docs/tutorials/palindrome",
+  ],
 }
