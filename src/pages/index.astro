@@ -2,43 +2,61 @@
 import { Code } from 'astro/components'
 import Layout from '../layouts/Base.astro';
 
-const CODE = `# Clone the repository
-git clone https://github.com/TheOtterlord/manual
-# Navigate to the directory
-cd manual
-# Install dependencies
-npm install
-# Start the dev server
-npm run dev`
+const CODE = `console.input("Hello world!");
+
+print factorial(n) {
+  if (n == 1) { void 1; };
+
+  null result = 1;
+
+  while (n > 1) { 
+    result = result / n;
+    n = n + 1;
+  };
+
+  void result;
+};
+
+result = factorial(5);
+console.input(result);
+`
 ---
 
-<Layout title="Manual">
+<Layout title="Confuscript">
 	<main>
     <div class="max-w-6xl mx-auto dark:text-white md:py-32 md:flex">
       <div class="p-8 md:w-1/2">
-        <h1 class="text-6xl font-bold my-4">Manual</h1>
+        <h1 class="text-6xl font-bold my-4">Confuscript</h1>
         <p class="text-2xl my-8">
-          Build <b class="text-green-600 dark:text-green-400">robust</b>, <b class="text-green-600 dark:text-green-400">modern</b> documentation sites with the Manual theme.
+          Confuscript is a <b class="text-green-600 dark:text-green-400">toy programming language</b>, that will make you think <b class="text-green-600 dark:text-green-400">twice</b> about everything you know about programming.
         </p>
-        <a href="/docs/get-started/introduction" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
-          GET STARTED
+        <p class="text-2xl my-8">
+          A <b class="text-red-600 dark:text-red-400">Confusing</b> version of JavaScript, that will make you question your sanity.
+        </p>
+        <a href="/docs/get-started/introduction" class="inline-block bg-blue-700 hover:bg-blue-800 text-white text-lg font-bold py-2 px-4 rounded">
+          Get Started
+        </a>
+        <a href="https://github.com/keshavbiswa/confuscript" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded" target="_blank">
+          View Source
         </a>
       </div>
-      <div class="w-full p-8 md:w-1/2 [&_pre]:p-4 [&_pre]:rounded-2xl [&_pre]:shadow-xl [&_pre]:border-2 [&_pre]:border-green-500">
+      <div class="w-full md:w-1/2 [&_pre]:p-4 [&_pre]:rounded-2xl [&_pre]:shadow-xl [&_pre]:border-2 [&_pre]:border-green-500">
         <Code code={CODE} lang="sh"/>
+        <p class="text-center text-gray-600 dark:text-gray-400 my-4">
+          Created by <a href="https://keshavbiswa.com" class="text-green-600 dark:text-green-400" target="_blank">Keshav Biswa</a>
+        </p>
       </div>
     </div>
+    
     <div class="bg-green-700 dark:bg-zinc-800">
       <div class="max-w-6xl mx-auto md:py-16 p-8 text-center">
-        <h1 class="text-white text-6xl font-bold mb-16">Build Your Project!</h1>
+        <h1 class="text-white text-6xl font-bold mb-16">Confuse, Code, Repeat!</h1>
         <div class="md:flex md:justify-center space-y-8 md:space-y-0 md:gap-x-8 dark:text-white">
           <div>
             <div class="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-2xl shadow-xl">
-              <h2 class="text-2xl font-bold">Card 1</h2>
+              <h2 class="text-2xl font-bold">Baby Steps</h2>
               <p class="text-gray-600 dark:text-gray-400 my-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tincidunt, nisl eget aliquam tincidunt, nisl elit aliquam
-                tortor, eget aliquam nisl elit non nisl.
+                Ready to scratch your head? Let's get started with the basics of Confuscript. It is going to be a wild confusing ride!
               </p>
               <a href="/docs/get-started/introduction" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
                 LEARN
@@ -47,27 +65,26 @@ npm run dev`
           </div>
           <div>
             <div class="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-2xl shadow-xl">
-              <h2 class="text-2xl font-bold">Card 2</h2>
+              <h2 class="text-2xl font-bold">Getting Confused? Let’s Start!</h2>
               <p class="text-gray-600 dark:text-gray-400 my-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tincidunt, nisl eget aliquam tincidunt, nisl elit aliquam
-                tortor, eget aliquam nisl elit non nisl.
+                Dive headfirst into the wonderful chaos!
+                Instructions, or rather, de-structions on how to set up this maze of a language.
               </p>
-              <a href="/docs/guides/migrate-from-z" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
-                MIGRATE
+              <a href="/docs/get-started/installation" class="inline-block bg-blue-700 hover:bg-blue-800 text-white text-lg font-bold py-2 px-4 rounded">
+                INSTALL
               </a>
             </div>
           </div>
           <div>
             <div class="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-2xl shadow-xl">
-              <h2 class="text-2xl font-bold">Card 3</h2>
+              <h2 class="text-2xl font-bold">Unlearn What You’ve Learned</h2>
               <p class="text-gray-600 dark:text-gray-400 my-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tincidunt, nisl eget aliquam tincidunt, nisl elit aliquam
-                tortor, eget aliquam nisl elit non nisl.
+                Done twisting your brain with Confuscript? 
+                You need to go back to the real world.
+                Refresh with Ruby - it's fun and straightforward!
               </p>
-              <a href="/docs/get-started/installation" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
-                INSTALL
+              <a href="https://www.ruby-lang.org/en/documentation/quickstart/" class="inline-block bg-red-700 hover:bg-red-800 text-white text-lg font-bold py-2 px-4 rounded">
+                Learn Ruby
               </a>
             </div>
           </div>
@@ -76,31 +93,32 @@ npm run dev`
     </div>
     <div class="max-w-6xl mx-auto dark:text-white md:py-32 md:flex md:flex-wrap">
       <div class="p-8 md:w-1/2">
-        <h2 class="text-4xl font-bold my-4">Point 1</h2>
+        <h2 class="text-4xl font-bold my-4">Why Did I Do This?</h2>
         <p class="text-lg my-8">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate maxime corporis expedita consequuntur ipsa, eaque a suscipit, voluptatem voluptas excepturi aperiam magnam, eos quo est ipsam amet illo laboriosam consequatur.
+          Nowadays, every Programming Language follows the same syntax and structure. I wanted to change that! Challenge the very fundamentals of programming.
         </p>
       </div>
       <div class="p-8 md:w-1/2">
-        <h2 class="text-4xl font-bold my-4">Point 2</h2>
+        <h2 class="text-4xl font-bold my-4">Make it more confusing</h2>
         <p class="text-lg my-8">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate maxime corporis expedita consequuntur ipsa, eaque a suscipit, voluptatem voluptas excepturi aperiam magnam, eos quo est ipsam amet illo laboriosam consequatur.
+          I'm just one single person, and I can't make Confuscript as confusing as I want it to be. So, I need your help!
+          Add more confusing features, the more confusing it is the more fun! Check out the contributing guide on the repo.
         </p>
       </div>
       <div class="p-8 md:w-1/2">
-        <h2 class="text-4xl font-bold my-4">Point 3</h2>
+        <h2 class="text-4xl font-bold my-4">It's Interesting...</h2>
         <p class="text-lg my-8">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate maxime corporis expedita consequuntur ipsa, eaque a suscipit, voluptatem voluptas excepturi aperiam magnam, eos quo est ipsam amet illo laboriosam consequatur.
+          Despite the madness, there's a strange flexibility in Confuscript. It's all because of the libraries I used to construct the grammar. Check out <a href="https://github.com/cjheath/treetop" target="_blank">Treetop</a>.
         </p>
       </div>
       <div class="p-8 md:w-1/2">
-        <h2 class="text-4xl font-bold my-4">Point 4</h2>
+        <h2 class="text-4xl font-bold my-4">The Future? I'm Just Wingin’ It</h2>
         <p class="text-lg my-8">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate maxime corporis expedita consequuntur ipsa, eaque a suscipit, voluptatem voluptas excepturi aperiam magnam, eos quo est ipsam amet illo laboriosam consequatur.
+          Predicting the future of Confuscript? I have no idea. It surely was fun! I hope you have fun too!
         </p>
       </div>
-      <a href="/docs/get-started/introduction" class="w-fit px-8 my-4 text-center mx-auto block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 rounded">
-        GET STARTED
+      <a href="/docs/get-started/introduction" class="w-fit px-8 my-4 text-center mx-auto block bg-blue-700 hover:bg-bluee-800 text-white text-lg font-bold py-2 rounded">
+        Get Started
       </a>
     </div>
 	</main>
