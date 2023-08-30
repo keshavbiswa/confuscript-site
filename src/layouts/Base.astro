@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import { GoogleAnalytics } from "astro-analytics"
 import {
   SITE_TITLE,
   SITE_DESCRIPTION,
@@ -50,8 +51,8 @@ const {
     <meta property="og:image" content={thumbnail.src} />
     <meta property="og:url" content={Astro.request.url} />
     <meta name="twitter:card" content="summary_large_image" />
+    
 	</head>
-
   <body class="dark:bg-zinc-900 scroll-smooth dark:[color-scheme:dark]">
     <Navigation/>
 		<slot/>
@@ -71,4 +72,5 @@ const {
       </div>
     </footer>
 	</body>
+  <GoogleAnalytics id="G-ENM53243L7" />
 </html>
