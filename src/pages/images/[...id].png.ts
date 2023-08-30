@@ -11,20 +11,12 @@ const width = 1200;
 
 export async function get({ url, params, props }: APIContext) {
   const { id } = params;
-  const { collection } = props as { collection: 'blog' | 'docs' };
+  const { collection } = props as { collection: 'docs' };
 
-  let post: CollectionEntry<'blog'> | CollectionEntry<'docs'> | undefined;
+  let post: CollectionEntry<'docs'> | undefined;
 
   try {
-    if (id === 'default') {
-      post = {
-        data: {
-          title: SITE_TITLE,
-          description: SITE_DESCRIPTION,
-          published: new Date()
-        }
-      } as CollectionEntry<'blog'>;
-    } else if (id) {
+    if (id) {
       post = await getEntryBySlug(collection, (id.split('.md')[0]));
     }
   } catch {
@@ -77,13 +69,8 @@ export async function get({ url, params, props }: APIContext) {
 };
 
 export async function getStaticPaths() {
-  return (await getCollection('blog')).map((post) => ({
-    params: { id: post.id },
-    props: { collection: 'blog' }
-  }) as any).concat((await getCollection('docs')).map((post) => ({
+  return (await getCollection('docs')).map((post) => ({
     params: { id: post.id },
     props: { collection: 'docs' }
-  }))).concat({
-    params: { id: 'default' }
-  });
+  }));
 }
