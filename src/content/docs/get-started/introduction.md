@@ -22,6 +22,6 @@ Here are some of the bewildering features that make Confuscript stand out:
 - **Null**: `Null` is not `null`, it's how you declare a variable.
 - **Else if**: `If-else` conditions runs opposite to one another (if condition is true, run else)
 - **Inverse Operators**: Yes, + is now -, and vice-versa.
-and many more.. Checkout the [Documentation](/docs/get-started/documentation) for more details.
+and many more.. Checkout the [Documentation](/docs/documentation/introduction) for more details.
 
 Checkout Installation at [Installation](/docs/get-started/installation)
