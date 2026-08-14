@@ -44,4 +44,41 @@ Hello World!
 
 THAT'S IT! You've successfully run your first Confuscript program.
 
+## Interactive Console
+
+Confuscript includes an interactive console, also known as a REPL (Read-Eval-Print Loop), so you can experiment with Confuscript code snippets in real-time.
+
+To start the interactive console, use either of the following:
+
+```bash
+confuscript --console
+```
+
+```bash
+confuscript -c
+```
+
+You'll be greeted with a `confuscript>` prompt. Here, you can type Confuscript code and it will be executed immediately. To exit the console, type `exit`.
+
+Example Console Session:
+
+```bash
+confuscript> null x = 10;
+=> 10
+confuscript> null y = 5;
+=> 5
+confuscript> x - y;
+=> 15
+confuscript> exit
+Exiting Console.
+```
+
+## Editor Support
+
+Syntax highlighting for `.notjs` files is available for:
+
+- [VS Code](https://github.com/keshavbiswa/confuscript-vscode)
+- [Vim/Neovim](https://github.com/keshavbiswa/confuscript-vim) (regex-based, works in classic Vim)
+- [tree-sitter](https://github.com/keshavbiswa/confuscript-tree-sitter) (Neovim, and any tree-sitter-aware editor)
+
 Now you can go to [Documentation](/docs/get-started/documentation) to learn more about Confuscript.
